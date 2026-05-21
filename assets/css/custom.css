@@ -103,20 +103,18 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 .profile-photo-wrap {
   text-align: center;
   margin-bottom: 1.8em;
-  display: block !important;
-  visibility: visible !important;
 }
 .profile-photo {
-  width: 140px !important;
-  height: 140px !important;
-  border-radius: 50% !important;
-  border: 2px solid rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1) !important;
-  object-fit: cover !important;
-  display: block !important;
-  margin: 0 auto !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
 }
 .profile-photo-placeholder {
   width: 140px;
