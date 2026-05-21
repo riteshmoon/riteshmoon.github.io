@@ -1,39 +1,96 @@
 /* =============================================
    Custom theme — Ritesh Moon
-   Black & white, no animation
+   Pure black & white. No images, no animation.
    ============================================= */
 
-/* ---- Pure black background ---- */
-#bg {
-  background-color: #000 !important;
-  background-image: none !important;
-  filter: none !important;
+/* ---- Nuke the background image & all its effects ---- */
+#bg,
+#bg::before,
+#bg::after,
+body.is-article-visible #bg::after {
+  background:        #000 !important;
+  background-image:  none !important;
+  background-color:  #000 !important;
+  filter:            none !important;
+  -webkit-filter:    none !important;
+  transform:         none !important;
+  -webkit-transform: none !important;
+  transition:        none !important;
 }
 
-/* ---- White accent overrides (replaces teal) ---- */
-a { color: rgba(255,255,255,0.8) !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
-a:hover { color: #fff !important; border-bottom-color: rgba(255,255,255,0.5) !important; }
+/* ---- Site base ---- */
+html, body {
+  background: #000 !important;
+  color: #fff !important;
+}
 
-h2.major::after { background: linear-gradient(90deg, rgba(255,255,255,0.45), transparent) !important; }
+/* Remove the radial-gradient shadow on the wrapper */
+#wrapper {
+  background-image: none !important;
+}
 
+/* ---- Article panels — solid black with white border ---- */
+#main > article {
+  background-color: rgba(0, 0, 0, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* ---- Force all text to white ---- */
+h1, h2, h3, h4, h5, h6,
+p, li, label, span, td, th,
+blockquote, address, figcaption {
+  color: #fff !important;
+}
+
+/* ---- Links ---- */
+a {
+  color: rgba(255, 255, 255, 0.75) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+}
+a:hover {
+  color: #fff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ---- h2.major underline ---- */
+h2.major::after {
+  background: linear-gradient(90deg, rgba(255,255,255,0.45), transparent) !important;
+}
+
+/* ---- Buttons ---- */
 input[type="submit"].primary, .button.primary {
   background-color: #fff !important;
   color: #000 !important;
+  border-color: #fff !important;
 }
 input[type="submit"]:hover, .button.primary:hover {
-  background-color: rgba(255,255,255,0.85) !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
-#header nav ul li a { border-color: rgba(255,255,255,0.2); }
+/* ---- Nav links ---- */
+#header nav ul li a {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
 #header nav ul li a:hover {
-  background-color: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ---- Form inputs ---- */
+input[type="text"], input[type="email"], textarea, select {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 /* ---- Hero tagline ---- */
 .hero-tagline {
   font-size: 0.8em;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5) !important;
   font-style: italic;
   line-height: 1.8;
   margin-top: 0.6em;
@@ -45,21 +102,25 @@ input[type="submit"]:hover, .button.primary:hover {
 /* ---- Profile photo ---- */
 .profile-photo-wrap { text-align: center; margin-bottom: 1.8em; }
 .profile-photo {
-  width: 140px; height: 140px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.4);
-  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 .profile-photo-placeholder {
-  width: 140px; height: 140px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.25);
-  background: rgba(255,255,255,0.04);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 3.5em;
 }
 
@@ -67,8 +128,8 @@ input[type="submit"]:hover, .button.primary:hover {
 article h3.major {
   font-size: 0.82em;
   letter-spacing: 0.12em;
-  color: rgba(255,255,255,0.5);
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
   padding-bottom: 0.4em;
   margin-top: 1.8em;
   text-transform: uppercase;
@@ -91,26 +152,26 @@ article h3.major {
   width: 11px; height: 11px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 0 6px rgba(255,255,255,0.4);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
 }
 .timeline-date {
   display: inline-block;
   font-size: 0.75em;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45) !important;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.4em;
 }
 .timeline-item h4 {
   margin: 0 0 0.2em;
-  color: #fff;
+  color: #fff !important;
   font-size: 0.95em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .timeline-item p, .timeline-item ul {
   font-size: 0.88em;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65) !important;
   margin: 0.3em 0 0;
 }
 .timeline-item ul { padding-left: 1.2em; }
@@ -118,42 +179,47 @@ article h3.major {
 
 /* ---- Project cards ---- */
 .project-card {
-  background: rgba(255,255,255,0.03);
-  border-left: 2px solid rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 0 4px 4px 0;
   padding: 1.1em 1.3em;
   margin-bottom: 1.4em;
 }
 .project-card h4 {
   margin: 0 0 0.5em;
-  color: #fff;
+  color: #fff !important;
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.4em; margin-bottom: 0.7em; }
 .tag {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   padding: 0.1em 0.55em;
   font-size: 0.72em;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65) !important;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.project-card p { font-size: 0.88em; color: rgba(255,255,255,0.65); margin: 0; line-height: 1.65; }
+.project-card p {
+  font-size: 0.88em;
+  color: rgba(255, 255, 255, 0.65) !important;
+  margin: 0;
+  line-height: 1.65;
+}
 
 /* ---- Skill groups ---- */
 .skill-group { margin-bottom: 1.2em; }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 0.45em; }
 .skill-tag {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
   padding: 0.25em 0.7em;
   font-size: 0.82em;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ---- Contact links ---- */
@@ -164,24 +230,25 @@ article h3.major {
   align-items: center;
   gap: 0.9em;
   padding: 0.75em 1em;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 5px;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
-  color: rgba(255,255,255,0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 0.9em;
   transition: background 0.2s, border-color 0.2s;
 }
 .contact-links a:hover {
-  background: rgba(255,255,255,0.08) !important;
-  border-color: rgba(255,255,255,0.4) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
   color: #fff !important;
 }
-.contact-links .icon { font-size: 1.1em; color: rgba(255,255,255,0.55); width: 1.4em; text-align: center; }
+.contact-links .icon {
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.55) !important;
+  width: 1.4em;
+  text-align: center;
+}
 
-/* ---- Header name ---- */
-#header .inner h1 { text-shadow: none; }
-
-/* ---- Icons row ---- */
-.icons li a:hover { color: #fff !important; }
+/* ---- Footer ---- */
+#footer p { color: rgba(255, 255, 255, 0.4) !important; }
