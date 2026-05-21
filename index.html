@@ -18,13 +18,13 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
+				<!-- Header / Landing -->
 					<header id="header">
-						<div class="logo">
-							<span class="icon fa-water"></span>
-						</div>
 						<div class="content">
 							<div class="inner">
+								<div class="header-photo-wrap">
+									<div class="header-photo" style="background-image: url('images/profile.jpg');"></div>
+								</div>
 								<h1>Ritesh Moon</h1>
 								<p>
 									PhD Researcher in Hydrology, Machine Learning &amp; Streamflow Prediction<br />
@@ -40,7 +40,7 @@
 							<ul>
 								<li><a href="#about">About</a></li>
 								<li><a href="#projects">Projects</a></li>
-								<li><a href="#research">Research</a></li>
+								<li><a href="#publications">Publications</a></li>
 								<li><a href="#skills">Skills</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -59,14 +59,15 @@
 								</div>
 
 								<p>
-									I am a PhD researcher at the University of Birmingham specialising in hydrological modelling,
-									streamflow prediction, and physics-informed machine learning. My work bridges process-based
-									hydrology with modern data-driven approaches to improve predictive performance across diverse
-									catchments in the UK.
+									I am a PhD researcher at the University of Birmingham working at the intersection of
+									hydrological modelling, machine learning, and environmental data science. My research
+									develops interpretable hybrid modelling frameworks that combine process-based hydrology
+									with machine learning to improve streamflow and river temperature prediction across
+									complex catchments.
 								</p>
 								<p>
-									I am passionate about addressing real-world challenges in water systems and climate change through
-									innovative, interpretable, and robust computational models.
+									I am passionate about addressing real-world challenges in water systems and climate
+									change through innovative, interpretable, and robust computational models.
 								</p>
 
 								<h3 class="major">Education</h3>
@@ -88,16 +89,61 @@
 									</div>
 								</div>
 
+								<h3 class="major">Experience</h3>
+								<div class="timeline">
+									<div class="timeline-item">
+										<h4>Doctoral Researcher &mdash; University of Birmingham</h4>
+										<span class="timeline-date">Oct 2023 &ndash; Present</span>
+										<ul>
+											<li>Developing a Physics-Informed Machine Learning (PIML) framework for streamflow
+											and reservoir modelling using the CAMELS-GB dataset.</li>
+											<li>Designing a signature-enhanced hybrid modelling framework to improve
+											interpretability and robustness across regulated and heterogeneous catchments.</li>
+											<li>Oral presentation at <strong>EGU 2025</strong> &mdash;
+											<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">
+											<em>Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework
+											for Streamflow Prediction in Complex Catchments</em></a>.</li>
+										</ul>
+									</div>
+									<div class="timeline-item">
+										<h4>Graduate Engineer &mdash; Arcadis Consulting India</h4>
+										<span class="timeline-date">Sep 2021 &ndash; Jan 2022</span>
+										<ul>
+											<li>Built optimised hydraulic models for drainage networks using Micro Drainage,
+											Civil Storm, and Open Roads (Drainage).</li>
+											<li>Coordinated with BIM modellers to ensure CAD QA-compliant drawings.</li>
+										</ul>
+									</div>
+								</div>
+
 								<h3 class="major">Awards &amp; Grants</h3>
 								<ul>
 									<li>LES Travel Grant &mdash; &pound;550 (March 2025)</li>
 									<li>University of Birmingham 125th Anniversary Grant &mdash; &pound;745 (June 2025)</li>
 								</ul>
+
+								<h3 class="major">Workshops &amp; Training</h3>
+								<div class="timeline">
+									<div class="timeline-item">
+										<h4><a href="https://ellis.eu/research/sites/unit-jena" target="_blank">ELLIS Summer School on AI for Earth &amp; Climate Sciences</a></h4>
+										<span class="timeline-date">Jena, Germany</span>
+										<p>Explored machine learning applications in Earth and climate systems, connecting
+										directly with PhD research on physics-informed ML for streamflow prediction.</p>
+									</div>
+									<div class="timeline-item">
+										<h4>HBV Model Training</h4>
+										<span class="timeline-date">Cranfield University, 2024</span>
+									</div>
+									<div class="timeline-item">
+										<h4>Hydrological Modelling &amp; Data Science Workshop</h4>
+										<span class="timeline-date">University of Birmingham, 2023</span>
+									</div>
+								</div>
 							</article>
 
 						<!-- Projects -->
 							<article id="projects">
-								<h2 class="major">Research Projects</h2>
+								<h2 class="major">Current Research Projects</h2>
 
 								<div class="project-card">
 									<h4>Project 1 &mdash; Signature-Enhanced PIML for Streamflow Prediction</h4>
@@ -109,10 +155,11 @@
 										<span class="tag">EGU 2025</span>
 									</div>
 									<p>
-										Developing physics-informed machine learning models that integrate HBV model outputs and
-										hydrological signatures (Baseflow Index, Flashiness Index, Rainfall&ndash;Runoff Ratio,
-										seasonality) to improve streamflow prediction across diverse UK catchments. This framework
-										enhances interpretability and robustness, particularly in regulated and heterogeneous catchments.
+										Developing physics-informed machine learning models that integrate HBV model outputs
+										and hydrological signatures (Baseflow Index, Flashiness Index, Rainfall&ndash;Runoff
+										Ratio, seasonality) to improve streamflow prediction across diverse UK catchments.
+										This framework enhances interpretability and robustness, particularly in regulated
+										and heterogeneous catchments.
 										<br /><br />
 										<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">&rarr; View EGU 2025 Abstract</a>
 									</p>
@@ -128,10 +175,10 @@
 										<span class="tag">Uncertainty Analysis</span>
 									</div>
 									<p>
-										Investigating how reservoir regulation affects streamflow behaviour and developing hybrid
-										modelling approaches to improve prediction in human-influenced catchments. Research focuses
-										on identifying where process-based models fail and how machine learning can fill those gaps
-										while preserving physical consistency.
+										Investigating how reservoir regulation affects streamflow behaviour and developing
+										hybrid modelling approaches to improve prediction in human-influenced catchments.
+										Research focuses on identifying where process-based models fail and how machine
+										learning can fill those gaps while preserving physical consistency.
 									</p>
 								</div>
 
@@ -144,62 +191,59 @@
 										<span class="tag">Environment Agency</span>
 									</div>
 									<p>
-										Developing hybrid models that combine process-based understanding and machine learning to
-										predict river temperature and assess climate-related impacts on freshwater systems. Produced
-										an evidence synthesis and practical recommendations for the Environment Agency on developing
-										a pilot river temperature forecasting system to support ecological protection and river management.
+										Developing hybrid models that combine process-based understanding and machine
+										learning to improve river temperature prediction and assess climate-related impacts
+										on freshwater systems. Produced practical recommendations for the Environment Agency
+										on developing a pilot forecasting system to support ecological protection and river
+										management.
 									</p>
 								</div>
 							</article>
 
-						<!-- Research -->
-							<article id="research">
-								<h2 class="major">Experience</h2>
+						<!-- Publications -->
+							<article id="publications">
+								<h2 class="major">Publications &amp; Presentations</h2>
 
-								<h3 class="major">Positions</h3>
-								<div class="timeline">
-									<div class="timeline-item">
-										<h4>Doctoral Researcher &mdash; University of Birmingham</h4>
-										<span class="timeline-date">Oct 2023 &ndash; Present</span>
-										<ul>
-											<li>Developing a Physics-Informed Machine Learning (PIML) framework for streamflow and
-											reservoir modelling using the CAMELS-GB dataset.</li>
-											<li>Designing a signature-enhanced hybrid modelling framework to improve interpretability
-											and robustness across regulated and heterogeneous catchments.</li>
-											<li>Oral presentation at <strong>EGU 2025</strong> &mdash;
-											<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">
-											<em>Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework for
-											Streamflow Prediction in Complex Catchments</em></a>.</li>
-										</ul>
-									</div>
-									<div class="timeline-item">
-										<h4>Graduate Engineer &mdash; Arcadis Consulting India</h4>
-										<span class="timeline-date">Sep 2021 &ndash; Jan 2022</span>
-										<ul>
-											<li>Built optimised hydraulic models for drainage networks using Micro Drainage,
-											Civil Storm, and Open Roads (Drainage).</li>
-											<li>Coordinated with BIM modellers to ensure CAD QA-compliant drawings.</li>
-										</ul>
+								<h3 class="major">Conference Presentations</h3>
+								<div class="pub-list">
+									<div class="pub-item">
+										<span class="pub-year">2025</span>
+										<div class="pub-content">
+											<p class="pub-title">
+												<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">
+												Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework
+												for Streamflow Prediction in Complex Catchments
+												</a>
+											</p>
+											<p class="pub-meta">
+												Moon, R. &mdash; <strong>Oral Presentation</strong>, European Geosciences Union
+												General Assembly (EGU 2025), Vienna, Austria.
+											</p>
+										</div>
 									</div>
 								</div>
 
-								<h3 class="major">Workshops &amp; Training</h3>
-								<div class="timeline">
-									<div class="timeline-item">
-										<h4><a href="https://ellis.eu/research/sites/unit-jena" target="_blank">ELLIS Summer School on AI for Earth &amp; Climate Sciences</a></h4>
-										<span class="timeline-date">Jena, Germany</span>
-										<p>Explored the role of machine learning in understanding Earth and climate systems.
-										Connected closely with PhD research on physics-informed ML for streamflow prediction.</p>
-									</div>
-									<div class="timeline-item">
-										<h4>HBV Model Training</h4>
-										<span class="timeline-date">Cranfield University, 2024</span>
-									</div>
-									<div class="timeline-item">
-										<h4>Hydrological Modelling &amp; Data Science Workshop</h4>
-										<span class="timeline-date">University of Birmingham, 2023</span>
+								<h3 class="major">Reports &amp; Evidence Synthesis</h3>
+								<div class="pub-list">
+									<div class="pub-item">
+										<span class="pub-year">2024</span>
+										<div class="pub-content">
+											<p class="pub-title">River Temperature Forecasting: Evidence Synthesis for Operational Applications</p>
+											<p class="pub-meta">
+												Moon, R. &mdash; Evidence synthesis report for the <strong>Environment Agency</strong>.
+												Reviewed empirical, process-based, ML, deep learning, and hybrid modelling approaches
+												for short-term river temperature forecasting.
+											</p>
+										</div>
 									</div>
 								</div>
+
+								<h3 class="major">Google Scholar</h3>
+								<p>
+									<a href="https://scholar.google.com/citations?user=va8m-MYAAAAJ&hl=en" target="_blank">
+										&rarr; View full profile on Google Scholar
+									</a>
+								</p>
 							</article>
 
 						<!-- Skills -->
@@ -238,7 +282,7 @@
 									</div>
 								</div>
 
-								<h3 class="major">Geospatial &amp; HPC</h3>
+								<h3 class="major">Geospatial &amp; Computing</h3>
 								<div class="skill-group">
 									<div class="skill-tags">
 										<span class="skill-tag">QGIS</span>
@@ -254,18 +298,13 @@
 									<li>River Temperature Modelling</li>
 									<li>Environmental Data Science &amp; Climate Adaptation</li>
 								</ul>
-
-								<h3 class="major">Hobbies</h3>
-								<ul>
-									<li>Badminton &nbsp;&bull;&nbsp; Reading &nbsp;&bull;&nbsp; Meditation</li>
-								</ul>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Get in Touch</h2>
-								<p style="font-size:0.9em;color:rgba(255,255,255,0.65);margin-bottom:1.5em;">
-									I am open to collaborations, research discussions, and academic opportunities.
+								<p style="font-size:0.9em; color:rgba(255,255,255,0.55); margin-bottom:1.5em;">
+									Open to collaborations, research discussions, and academic opportunities.
 								</p>
 
 								<ul class="contact-links">
@@ -278,7 +317,7 @@
 									<li>
 										<a href="mailto:rym386@student.bham.ac.uk">
 											<span class="icon solid fa-graduation-cap"></span>
-											rym386@student.bham.ac.uk &nbsp;<span style="opacity:0.5;font-size:0.85em;">(University)</span>
+											rym386@student.bham.ac.uk &nbsp;<span style="opacity:0.45;font-size:0.85em;">(University)</span>
 										</a>
 									</li>
 									<li>
@@ -326,8 +365,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-		<!-- Custom scripts -->
 			<script src="assets/js/custom.js"></script>
 
 	</body>

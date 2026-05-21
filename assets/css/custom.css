@@ -99,22 +99,70 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   margin-right: auto;
 }
 
-/* ---- Profile photo ---- */
-.profile-photo-wrap {
-  text-align: center;
-  margin-bottom: 1.8em;
+/* ---- Header photo (landing page) ---- */
+.header-photo-wrap {
+  margin-bottom: 1em;
 }
-.profile-photo {
-  width: 140px;
-  height: 140px;
+.header-photo {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
+}
+
+/* ---- Profile photo (About panel) ---- */
+.profile-photo-wrap {
+  text-align: center;
+  margin-bottom: 1.8em;
+}
+.profile-photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---- Publication list ---- */
+.pub-list { margin: 0.8em 0 1.5em; }
+.pub-item {
+  display: flex;
+  gap: 1.2em;
+  margin-bottom: 1.4em;
+  align-items: flex-start;
+}
+.pub-year {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  padding-top: 0.2em;
+  min-width: 2.5em;
+}
+.pub-content { flex: 1; }
+.pub-title {
+  font-size: 0.9em;
+  color: #fff !important;
+  margin: 0 0 0.3em;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.pub-meta {
+  font-size: 0.82em;
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin: 0;
+  line-height: 1.55;
 }
 .profile-photo-placeholder {
   width: 140px;
