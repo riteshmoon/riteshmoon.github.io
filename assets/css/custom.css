@@ -1,0 +1,189 @@
+/* =============================================
+   Custom theme — Ritesh Moon
+   Teal/blue academic palette + interactive elements
+   ============================================= */
+
+:root {
+  --teal:       #00b4d8;
+  --teal-dark:  #0077b6;
+  --teal-light: #90e0ef;
+  --navy:       #03045e;
+}
+
+/* ---- Particles background ---- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none; /* clicks pass through to content */
+}
+
+/* Ensure wrapper sits above particles */
+#wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---- Accent colour overrides ---- */
+a {
+  color: var(--teal-light) !important;
+  border-bottom-color: rgba(144, 224, 239, 0.25) !important;
+}
+a:hover {
+  color: #fff !important;
+  border-bottom-color: rgba(255,255,255,0.5) !important;
+}
+
+h2.major::after {
+  background: linear-gradient(90deg, var(--teal), transparent) !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+.button.primary {
+  background-color: var(--teal-dark) !important;
+}
+
+input[type="submit"]:hover,
+.button.primary:hover {
+  background-color: var(--teal) !important;
+}
+
+/* Nav links */
+#header nav ul li a {
+  border-color: rgba(0, 180, 216, 0.35);
+}
+#header nav ul li a:hover {
+  background-color: rgba(0, 180, 216, 0.15);
+  border-color: var(--teal);
+}
+
+/* ---- Typed cursor ---- */
+.typed-cursor {
+  color: var(--teal);
+  font-weight: 300;
+}
+
+/* ---- Skill bars ---- */
+.skill-bars {
+  margin: 1.5em 0;
+}
+
+.skill-item {
+  margin-bottom: 1.2em;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4em;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+}
+
+.skill-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--teal-dark), var(--teal));
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Timeline ---- */
+.timeline {
+  position: relative;
+  margin: 1.5em 0;
+  padding-left: 1.8em;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--teal), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.55em;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 8px var(--teal);
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 0.78em;
+  color: var(--teal-light);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.timeline-item h4 {
+  margin: 0 0 0.2em;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-item p,
+.timeline-item ul {
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.75);
+  margin: 0.4em 0 0;
+}
+
+.timeline-item ul {
+  padding-left: 1.2em;
+}
+
+.timeline-item ul li {
+  margin-bottom: 0.4em;
+}
+
+/* ---- Section headers inside articles ---- */
+article h3.major {
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  color: var(--teal-light);
+  border-bottom: 1px solid rgba(0, 180, 216, 0.3);
+  padding-bottom: 0.4em;
+  margin-top: 1.8em;
+  text-transform: uppercase;
+}
+
+/* ---- Icons in contact ---- */
+.icons li a:hover {
+  color: var(--teal) !important;
+}
+
+/* ---- Subtle glow on header name ---- */
+#header .inner h1 {
+  text-shadow: 0 0 40px rgba(0, 180, 216, 0.4);
+}
