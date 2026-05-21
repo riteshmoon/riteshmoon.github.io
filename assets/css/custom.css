@@ -1,41 +1,39 @@
 /* =============================================
    Custom theme — Ritesh Moon
-   Teal/blue academic palette + interactive elements
+   Black & white, no animation
    ============================================= */
 
-:root {
-  --teal:       #00b4d8;
-  --teal-dark:  #0077b6;
-  --teal-light: #90e0ef;
+/* ---- Pure black background ---- */
+#bg {
+  background-color: #000 !important;
+  background-image: none !important;
+  filter: none !important;
 }
 
-/* ---- Particles background ---- */
-#particles-js {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-#wrapper { position: relative; z-index: 2; }
-
-/* ---- Accent colour overrides ---- */
-a { color: var(--teal-light) !important; border-bottom-color: rgba(144,224,239,0.25) !important; }
+/* ---- White accent overrides (replaces teal) ---- */
+a { color: rgba(255,255,255,0.8) !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
 a:hover { color: #fff !important; border-bottom-color: rgba(255,255,255,0.5) !important; }
 
-h2.major::after { background: linear-gradient(90deg, var(--teal), transparent) !important; }
+h2.major::after { background: linear-gradient(90deg, rgba(255,255,255,0.45), transparent) !important; }
 
-input[type="submit"].primary, .button.primary { background-color: var(--teal-dark) !important; }
-input[type="submit"]:hover, .button.primary:hover { background-color: var(--teal) !important; }
+input[type="submit"].primary, .button.primary {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+input[type="submit"]:hover, .button.primary:hover {
+  background-color: rgba(255,255,255,0.85) !important;
+}
 
-#header nav ul li a { border-color: rgba(0,180,216,0.35); }
-#header nav ul li a:hover { background-color: rgba(0,180,216,0.15); border-color: var(--teal); }
+#header nav ul li a { border-color: rgba(255,255,255,0.2); }
+#header nav ul li a:hover {
+  background-color: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.5);
+}
 
 /* ---- Hero tagline ---- */
 .hero-tagline {
   font-size: 0.8em;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.5);
   font-style: italic;
   line-height: 1.8;
   margin-top: 0.6em;
@@ -44,32 +42,24 @@ input[type="submit"]:hover, .button.primary:hover { background-color: var(--teal
   margin-right: auto;
 }
 
-/* ---- Typed cursor ---- */
-.typed-cursor { color: var(--teal); font-weight: 300; }
-
 /* ---- Profile photo ---- */
-.profile-photo-wrap {
-  text-align: center;
-  margin-bottom: 1.8em;
-}
+.profile-photo-wrap { text-align: center; margin-bottom: 1.8em; }
 .profile-photo {
-  width: 140px;
-  height: 140px;
+  width: 140px; height: 140px;
   border-radius: 50%;
-  border: 3px solid var(--teal);
-  box-shadow: 0 0 24px rgba(0,180,216,0.35);
+  border: 2px solid rgba(255,255,255,0.4);
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
   object-fit: cover;
 }
 .profile-photo-placeholder {
-  width: 140px;
-  height: 140px;
+  width: 140px; height: 140px;
   border-radius: 50%;
-  border: 3px solid var(--teal);
-  background: rgba(0,180,216,0.08);
+  border: 2px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.04);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--teal);
+  color: rgba(255,255,255,0.3);
   font-size: 3.5em;
 }
 
@@ -77,40 +67,36 @@ input[type="submit"]:hover, .button.primary:hover { background-color: var(--teal
 article h3.major {
   font-size: 0.82em;
   letter-spacing: 0.12em;
-  color: var(--teal-light);
-  border-bottom: 1px solid rgba(0,180,216,0.3);
+  color: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
   padding-bottom: 0.4em;
   margin-top: 1.8em;
   text-transform: uppercase;
 }
 
 /* ---- Timeline ---- */
-.timeline {
-  position: relative;
-  margin: 1.2em 0;
-  padding-left: 1.8em;
-}
+.timeline { position: relative; margin: 1.2em 0; padding-left: 1.8em; }
 .timeline::before {
   content: '';
   position: absolute;
   left: 6px; top: 6px; bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--teal), transparent);
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35), transparent);
 }
 .timeline-item { position: relative; margin-bottom: 2em; }
 .timeline-item::before {
   content: '';
   position: absolute;
   left: -1.55em; top: 5px;
-  width: 12px; height: 12px;
+  width: 11px; height: 11px;
   border-radius: 50%;
-  background: var(--teal);
-  box-shadow: 0 0 8px var(--teal);
+  background: #fff;
+  box-shadow: 0 0 6px rgba(255,255,255,0.4);
 }
 .timeline-date {
   display: inline-block;
   font-size: 0.75em;
-  color: var(--teal-light);
+  color: rgba(255,255,255,0.45);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.4em;
@@ -124,7 +110,7 @@ article h3.major {
 }
 .timeline-item p, .timeline-item ul {
   font-size: 0.88em;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.65);
   margin: 0.3em 0 0;
 }
 .timeline-item ul { padding-left: 1.2em; }
@@ -132,8 +118,8 @@ article h3.major {
 
 /* ---- Project cards ---- */
 .project-card {
-  background: rgba(255,255,255,0.04);
-  border-left: 3px solid var(--teal);
+  background: rgba(255,255,255,0.03);
+  border-left: 2px solid rgba(255,255,255,0.35);
   border-radius: 0 4px 4px 0;
   padding: 1.1em 1.3em;
   margin-bottom: 1.4em;
@@ -145,87 +131,57 @@ article h3.major {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
-  margin-bottom: 0.7em;
-}
+.project-tags { display: flex; flex-wrap: wrap; gap: 0.4em; margin-bottom: 0.7em; }
 .tag {
-  background: rgba(0,180,216,0.15);
-  border: 1px solid rgba(0,180,216,0.35);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 3px;
   padding: 0.1em 0.55em;
   font-size: 0.72em;
-  color: var(--teal-light);
+  color: rgba(255,255,255,0.65);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.project-card p {
-  font-size: 0.88em;
-  color: rgba(255,255,255,0.7);
-  margin: 0;
-  line-height: 1.65;
-}
+.project-card p { font-size: 0.88em; color: rgba(255,255,255,0.65); margin: 0; line-height: 1.65; }
 
 /* ---- Skill groups ---- */
 .skill-group { margin-bottom: 1.2em; }
-.skill-group-label {
-  font-size: 0.78em;
-  color: var(--teal-light);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5em;
-}
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45em;
-}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.45em; }
 .skill-tag {
-  background: rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 4px;
   padding: 0.25em 0.7em;
   font-size: 0.82em;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.8);
 }
 
-/* ---- Contact links list ---- */
-.contact-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5em;
-}
+/* ---- Contact links ---- */
+.contact-links { list-style: none; padding: 0; margin: 0 0 1.5em; }
 .contact-links li { margin-bottom: 0.65em; }
 .contact-links a {
   display: flex;
   align-items: center;
   gap: 0.9em;
   padding: 0.75em 1em;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 5px;
   text-decoration: none !important;
   border-bottom: 1px solid rgba(255,255,255,0.1) !important;
-  color: rgba(255,255,255,0.85) !important;
+  color: rgba(255,255,255,0.8) !important;
   font-size: 0.9em;
   transition: background 0.2s, border-color 0.2s;
 }
 .contact-links a:hover {
-  background: rgba(0,180,216,0.12) !important;
-  border-color: var(--teal) !important;
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.4) !important;
   color: #fff !important;
 }
-.contact-links .icon {
-  font-size: 1.1em;
-  color: var(--teal);
-  width: 1.4em;
-  text-align: center;
-}
+.contact-links .icon { font-size: 1.1em; color: rgba(255,255,255,0.55); width: 1.4em; text-align: center; }
 
-/* ---- Header name glow ---- */
-#header .inner h1 { text-shadow: 0 0 40px rgba(0,180,216,0.4); }
+/* ---- Header name ---- */
+#header .inner h1 { text-shadow: none; }
 
 /* ---- Icons row ---- */
-.icons li a:hover { color: var(--teal) !important; }
+.icons li a:hover { color: #fff !important; }
