@@ -30,11 +30,16 @@
 									<span id="typed-text"></span><br />
 									University of Birmingham, United Kingdom
 								</p>
+								<p class="hero-tagline">
+									I develop interpretable hybrid models that combine process-based hydrology and machine learning
+									to improve streamflow prediction across UK catchments.
+								</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="#research">Research</a></li>
 								<li><a href="#skills">Skills</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -48,12 +53,18 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About Me</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="Hydrology research" /></span>
+
+								<!-- Replace images/profile.jpg with your own headshot -->
+								<div class="profile-photo-wrap">
+									<img src="images/profile.jpg" alt="Ritesh Moon" class="profile-photo"
+										onerror="this.outerHTML='<span class=\'profile-photo-placeholder\'><i class=\'icon solid fa-user\'></i></span>'" />
+								</div>
+
 								<p>
 									I am a PhD researcher at the University of Birmingham specialising in hydrological modelling,
-									streamflow prediction, and physics-informed machine learning. My work focuses on developing
-									hybrid modelling frameworks that bridge process-based hydrology with modern data-driven approaches
-									to improve predictive performance across diverse catchments in the UK.
+									streamflow prediction, and physics-informed machine learning. My work bridges process-based
+									hydrology with modern data-driven approaches to improve predictive performance across diverse
+									catchments in the UK.
 								</p>
 								<p>
 									I am passionate about addressing real-world challenges in water systems and climate change through
@@ -86,12 +97,68 @@
 								</ul>
 							</article>
 
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Research Projects</h2>
+
+								<div class="project-card">
+									<h4>Project 1 &mdash; Signature-Enhanced PIML for Streamflow Prediction</h4>
+									<div class="project-tags">
+										<span class="tag">Physics-Informed ML</span>
+										<span class="tag">HBV Model</span>
+										<span class="tag">CAMELS-GB</span>
+										<span class="tag">Hydrological Signatures</span>
+										<span class="tag">EGU 2025</span>
+									</div>
+									<p>
+										Developing physics-informed machine learning models that integrate HBV model outputs and
+										hydrological signatures (Baseflow Index, Flashiness Index, Rainfall&ndash;Runoff Ratio,
+										seasonality) to improve streamflow prediction across diverse UK catchments. This framework
+										enhances interpretability and robustness, particularly in regulated and heterogeneous catchments.
+										<br /><br />
+										<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">&rarr; View EGU 2025 Abstract</a>
+									</p>
+								</div>
+
+								<div class="project-card">
+									<h4>Project 2 &mdash; Reservoir-Impacted Catchments &amp; Hybrid Modelling</h4>
+									<div class="project-tags">
+										<span class="tag">Reservoir Regulation</span>
+										<span class="tag">Hybrid Modelling</span>
+										<span class="tag">LSTM</span>
+										<span class="tag">GRU</span>
+										<span class="tag">Uncertainty Analysis</span>
+									</div>
+									<p>
+										Investigating how reservoir regulation affects streamflow behaviour and developing hybrid
+										modelling approaches to improve prediction in human-influenced catchments. Research focuses
+										on identifying where process-based models fail and how machine learning can fill those gaps
+										while preserving physical consistency.
+									</p>
+								</div>
+
+								<div class="project-card">
+									<h4>Project 3 &mdash; River Temperature Hybrid Modelling</h4>
+									<div class="project-tags">
+										<span class="tag">River Temperature</span>
+										<span class="tag">Deep Learning</span>
+										<span class="tag">Climate Adaptation</span>
+										<span class="tag">Environment Agency</span>
+									</div>
+									<p>
+										Developing hybrid models that combine process-based understanding and machine learning to
+										predict river temperature and assess climate-related impacts on freshwater systems. Produced
+										an evidence synthesis and practical recommendations for the Environment Agency on developing
+										a pilot river temperature forecasting system to support ecological protection and river management.
+									</p>
+								</div>
+							</article>
+
 						<!-- Research -->
 							<article id="research">
-								<h2 class="major">Research &amp; Experience</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="Research" /></span>
+								<h2 class="major">Experience</h2>
 
-								<h3 class="major">Experience</h3>
+								<h3 class="major">Positions</h3>
 								<div class="timeline">
 									<div class="timeline-item">
 										<h4>Doctoral Researcher &mdash; University of Birmingham</h4>
@@ -99,9 +166,12 @@
 										<ul>
 											<li>Developing a Physics-Informed Machine Learning (PIML) framework for streamflow and
 											reservoir modelling using the CAMELS-GB dataset.</li>
-											<li>Designing a signature-enhanced hybrid modelling framework integrating Baseflow Index,
-											Flashiness Index, and Rainfall&ndash;Runoff Ratio to improve catchment predictions.</li>
-											<li>Oral presentation at <strong>EGU 2025</strong> &mdash; <a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank"><em>&ldquo;Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework for Streamflow Prediction in Complex Catchments&rdquo;</em></a>.</li>
+											<li>Designing a signature-enhanced hybrid modelling framework to improve interpretability
+											and robustness across regulated and heterogeneous catchments.</li>
+											<li>Oral presentation at <strong>EGU 2025</strong> &mdash;
+											<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">
+											<em>Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework for
+											Streamflow Prediction in Complex Catchments</em></a>.</li>
 										</ul>
 									</div>
 									<div class="timeline-item">
@@ -115,71 +185,67 @@
 									</div>
 								</div>
 
-								<h3 class="major">Projects</h3>
+								<h3 class="major">Workshops &amp; Training</h3>
 								<div class="timeline">
 									<div class="timeline-item">
-										<h4>River Temperature Forecasting &mdash; Environment Agency</h4>
-										<span class="timeline-date">Consultancy Project</span>
-										<ul>
-											<li>Developed a focused evidence synthesis on river temperature modelling for forecasting applications.</li>
-											<li>Reviewed and classified modelling approaches: empirical, process-based, machine learning, deep learning, and hybrid models.</li>
-											<li>Assessed model suitability for short-term forecasting, early warning, and operational river management.</li>
-											<li>Examined key forecasting requirements including meteorological inputs, multi-step prediction, uncertainty, and performance during extremes (heatwave/drought).</li>
-											<li>Produced practical recommendations for a pilot river temperature forecasting system to support ecological protection and climate adaptation.</li>
-										</ul>
+										<h4><a href="https://ellis.eu/research/sites/unit-jena" target="_blank">ELLIS Summer School on AI for Earth &amp; Climate Sciences</a></h4>
+										<span class="timeline-date">Jena, Germany</span>
+										<p>Explored the role of machine learning in understanding Earth and climate systems.
+										Connected closely with PhD research on physics-informed ML for streamflow prediction.</p>
+									</div>
+									<div class="timeline-item">
+										<h4>HBV Model Training</h4>
+										<span class="timeline-date">Cranfield University, 2024</span>
+									</div>
+									<div class="timeline-item">
+										<h4>Hydrological Modelling &amp; Data Science Workshop</h4>
+										<span class="timeline-date">University of Birmingham, 2023</span>
 									</div>
 								</div>
-
-								<h3 class="major">Conference</h3>
-								<p>
-									Oral presentation at <strong>EGU 2025</strong> (European Geosciences Union) &mdash;
-									<a href="https://meetingorganizer.copernicus.org/EGU25/EGU25-12113.html" target="_blank">
-									<em>&ldquo;Bridging Physics and Machine Learning: A Signature-Enhanced Hybrid Framework
-									for Streamflow Prediction in Complex Catchments&rdquo;</em></a>.
-								</p>
-
-								<h3 class="major">Workshops &amp; Training</h3>
-								<ul>
-									<li>Hydrological Modelling &amp; Data Science Workshop, University of Birmingham (2023)</li>
-									<li>HBV Model Training, Cranfield University (2024)</li>
-									<li>
-										<a href="https://ellis.eu/research/sites/unit-jena" target="_blank">ELLIS Summer School on AI for Earth &amp; Climate Sciences</a>,
-										Jena, Germany &mdash; Explored machine learning applications in Earth and climate systems,
-										connecting directly with PhD research on physics-informed ML for streamflow prediction.
-									</li>
-								</ul>
 							</article>
 
 						<!-- Skills -->
 							<article id="skills">
-								<h2 class="major">Skills &amp; Interests</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="Skills" /></span>
+								<h2 class="major">Skills</h2>
 
-								<h3 class="major">Programming &amp; Tools</h3>
-								<div class="skill-bars">
-									<div class="skill-item">
-										<div class="skill-label"><span>Python</span><span>85%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+								<h3 class="major">Programming</h3>
+								<div class="skill-group">
+									<div class="skill-tags">
+										<span class="skill-tag">Python</span>
+										<span class="skill-tag">R / RStudio</span>
+										<span class="skill-tag">Julia</span>
 									</div>
-									<div class="skill-item">
-										<div class="skill-label"><span>R / RStudio</span><span>75%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+								</div>
+
+								<h3 class="major">Hydrological Modelling</h3>
+								<div class="skill-group">
+									<div class="skill-tags">
+										<span class="skill-tag">HBV Model</span>
+										<span class="skill-tag">HEC-RAS</span>
+										<span class="skill-tag">CAMELS-GB</span>
+										<span class="skill-tag">Hydrological Signatures</span>
+										<span class="skill-tag">Micro Drainage</span>
+										<span class="skill-tag">Civil Storm</span>
 									</div>
-									<div class="skill-item">
-										<div class="skill-label"><span>Julia</span><span>65%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+								</div>
+
+								<h3 class="major">Machine Learning</h3>
+								<div class="skill-group">
+									<div class="skill-tags">
+										<span class="skill-tag">LSTM</span>
+										<span class="skill-tag">GRU</span>
+										<span class="skill-tag">Physics-Informed ML</span>
+										<span class="skill-tag">Hybrid Modelling</span>
+										<span class="skill-tag">Uncertainty Analysis</span>
 									</div>
-									<div class="skill-item">
-										<div class="skill-label"><span>QGIS</span><span>70%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-label"><span>HEC-RAS</span><span>65%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-label"><span>HPC (Bluebear @ UoB)</span><span>60%</span></div>
-										<div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+								</div>
+
+								<h3 class="major">Geospatial &amp; HPC</h3>
+								<div class="skill-group">
+									<div class="skill-tags">
+										<span class="skill-tag">QGIS</span>
+										<span class="skill-tag">BlueBEAR HPC (UoB)</span>
+										<span class="skill-tag">Remote Sensing</span>
 									</div>
 								</div>
 
@@ -187,48 +253,60 @@
 								<ul>
 									<li>Hybrid &amp; Physics-Informed Machine Learning</li>
 									<li>Flood Forecasting &amp; Streamflow Prediction</li>
-									<li>Hydrological Modelling &amp; Remote Sensing</li>
-									<li>Environmental Data Science</li>
+									<li>River Temperature Modelling</li>
+									<li>Environmental Data Science &amp; Climate Adaptation</li>
 								</ul>
 
 								<h3 class="major">Hobbies</h3>
 								<ul>
-									<li>Badminton</li>
-									<li>Reading</li>
-									<li>Meditation</li>
+									<li>Badminton &nbsp;&bull;&nbsp; Reading &nbsp;&bull;&nbsp; Meditation</li>
 								</ul>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="mailto:riteshmoon94@gmail.com" enctype="text/plain">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="mailto:riteshmoon94@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									<li><a href="mailto:rym386@student.bham.ac.uk" class="icon solid fa-graduation-cap"><span class="label">University Email</span></a></li>
-									<li><a href="https://github.com/riteshmoon" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/ritesh-moon" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://scholar.google.com/citations?user=va8m-MYAAAAJ&hl=en" class="icon solid fa-book-open" target="_blank"><span class="label">Google Scholar</span></a></li>
-									<li><a href="https://www.birmingham.ac.uk/staff/profiles/gees/moon-ritesh" class="icon solid fa-university" target="_blank"><span class="label">UoB Profile</span></a></li>
+								<h2 class="major">Get in Touch</h2>
+								<p style="font-size:0.9em;color:rgba(255,255,255,0.65);margin-bottom:1.5em;">
+									I am open to collaborations, research discussions, and academic opportunities.
+								</p>
+
+								<ul class="contact-links">
+									<li>
+										<a href="mailto:riteshmoon94@gmail.com">
+											<span class="icon solid fa-envelope"></span>
+											riteshmoon94@gmail.com
+										</a>
+									</li>
+									<li>
+										<a href="mailto:rym386@student.bham.ac.uk">
+											<span class="icon solid fa-graduation-cap"></span>
+											rym386@student.bham.ac.uk &nbsp;<span style="opacity:0.5;font-size:0.85em;">(University)</span>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.birmingham.ac.uk/staff/profiles/gees/moon-ritesh" target="_blank">
+											<span class="icon solid fa-university"></span>
+											UoB Staff Profile
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/ritesh-moon" target="_blank">
+											<span class="icon brands fa-linkedin"></span>
+											LinkedIn
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/riteshmoon" target="_blank">
+											<span class="icon brands fa-github"></span>
+											GitHub
+										</a>
+									</li>
+									<li>
+										<a href="https://scholar.google.com/citations?user=va8m-MYAAAAJ&hl=en" target="_blank">
+											<span class="icon solid fa-book-open"></span>
+											Google Scholar
+										</a>
+									</li>
 								</ul>
 							</article>
 

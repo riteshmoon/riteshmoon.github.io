@@ -63,30 +63,5 @@
     retina_detect: true
   });
 
-  /* ---- Skill bar animation ---- */
-  function animateSkillBars() {
-    document.querySelectorAll('.skill-fill').forEach(function (bar) {
-      bar.style.width = bar.getAttribute('data-width') + '%';
-    });
-  }
-
-  function resetSkillBars() {
-    document.querySelectorAll('.skill-fill').forEach(function (bar) {
-      bar.style.width = '0%';
-    });
-  }
-
-  window.addEventListener('hashchange', function () {
-    if (window.location.hash === '#skills') {
-      setTimeout(animateSkillBars, 350);
-    } else {
-      resetSkillBars();
-    }
-  });
-
-  /* Run once if page loads directly on #skills */
-  if (window.location.hash === '#skills') {
-    setTimeout(animateSkillBars, 600);
-  }
 
 })();
