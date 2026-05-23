@@ -128,11 +128,9 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 24px rgba(255, 255, 255, 0.1);
-  background-image: url('../../images/profile.jpg') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  display: block !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   margin: 0 auto;
 }
 
